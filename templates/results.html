@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html style="background-color: lightskyblue !important;">
+
+<head>
+    <title>Doodle.io</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script type="text/javascript" src="/static/js/canvas.js"></script>
+</head>
+
+<body>
+    <div style="font-size: 100px;">Doodle.io</div>
+    <h1>Results</h1>
+    <div class="results">
+        {%if prediction != 'Octopus'%}
+        <h1 style="color:red;">Looks like you drew a </h1> <div style="color:red; font-size: 150px; font-weight: bold;"> {{ prediction }} ! </div>
+        {%else%}
+        <h1 style="color:red;">Looks like you drew an </h1> <div style="color:red; font-size: 150px; font-weight: bold;"> {{ prediction }} ! </div>
+        {%endif%}
+    </div>
+</body>
+
+</html>
